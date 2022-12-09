@@ -1,0 +1,122 @@
+
+.content--hightlight {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.content--hightlight::after {
+    content: '';
+    position: absolute;
+    width: 38vw;
+    height: 11vw;
+    inset: 0 0 auto auto;
+
+    background-image: -webkit-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+    background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+    background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
+    -webkit-background-size: 20px 20px;
+
+    opacity: 0.2;
+}
+
+.content--hightlight::before {
+    content: '';
+    position: absolute;
+    width: 38vw;
+    height: 11vw;
+    inset: auto auto 0 0;
+
+    background-image: -webkit-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+    background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+    background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
+    -webkit-background-size: 20px 20px;
+
+    opacity: 0.2;
+}
+
+.content__title-bg {
+    color: var(--color-second);
+    position: absolute;
+    font-size: 15vw;
+    font-weight: 700;
+    margin: 5rem -9vw;
+}
+
+.content__full-height {
+    height: 100%;
+}
+
+
+
+.content__full-height .container , .content__full-height .row {
+    height: 100%;
+}
+
+.content__image-full {
+    overflow: hidden;
+    height: 100%;
+}
+
+.content__image-full img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.content__intro-full {
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14vw 0;
+}
+
+.content__full-height .content__name {
+    font-weight: 700;
+}
+
+.content__animation {
+    font-weight: 700;
+}
+
+.content__time {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content--hightlight {
+        height: 63vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content--hightlight {
+        height: auto;
+        margin: 5rem 0px;
+    }
+
+    .content__image-full {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .content__intro-full {
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .content__full-height {
+        height: auto;    
+    }
+    
+    .content__full-height .container , .content__full-height .row {
+        height: auto;
+    }
+
+    .content__intro {
+        margin: 0 0 2rem;
+    }
+}

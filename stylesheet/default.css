@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #161519;
+  --color-second: #1B1A1E;
+  --color-third: #32b5ff;
+  --color-red:#ba3341;
+  --color-white:#ffffff;
+
+  --color-black:#000000;
+  --color-black-2:#191919;
+  --color-black-3:#323232;
+  --color-black-4:#4c4c4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat" !important;
+  background-color: var(--color-primary)!important;
+}
+

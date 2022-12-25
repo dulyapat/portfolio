@@ -1,3 +1,8 @@
 .content {
     position: relative;
-  }
+    min-height: 39rem;
+}
+
+.content--aboutus {
+  padding: 5rem 0;
+}

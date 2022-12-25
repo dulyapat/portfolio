@@ -65,7 +65,7 @@
 
 .content__intro-full {
     height: 100%;
-    color: white;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,6 +78,7 @@
 
 .content__animation {
     font-weight: 700;
+    color:var(--color-yellow);
 }
 
 .content__time {

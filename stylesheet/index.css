@@ -4,3 +4,6 @@
 @import "./typography.css";
 @import "./slick/index.css";
 @import "./nav/index.css";
+@import "./title/index.css";
+@import "./list/index.css";
+@import "./card/index.css";

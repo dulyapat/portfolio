@@ -41,7 +41,7 @@
 
 @media only screen and (max-width: 1024px) {
     .nav.nav--slidebar {
-        height: 63%;
+        height: 100%;
     }
 }
 

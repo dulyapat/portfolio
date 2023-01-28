@@ -1,0 +1,11 @@
+.btn.btn--arrow {
+    padding: 0;
+}
+
+.btn.btn--arrow i {
+    font-size: 0.6rem;
+    top: -1px;
+    position: relative;
+    margin-left: 0.25rem;
+}
+

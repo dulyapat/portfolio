@@ -17,11 +17,11 @@ if(document.querySelector('.slick--portfolio')) {
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
+        fade: false,
         infinite:true,
         loop:true,
         dots: false,
-        autoplay:true,
+        autoplay:false,
         draggable:true,
     });  
 }

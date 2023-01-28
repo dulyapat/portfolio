@@ -1,0 +1,9 @@
+.link-yellow {
+    color:var(--color-yellow);
+    text-decoration: underline;
+}
+
+.link-yellow:hover {
+    color:var(--color-orange);
+    transition: all 250ms ease;
+}

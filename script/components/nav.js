@@ -5,8 +5,9 @@ Vue.createApp({
             <ul>
                 <li v-for="item in items" 
                 :key="item">
-                    <a class="nav__item" v-bind:id="item.id" v-bind:href="item.href">
+                    <a class="nav__item" v-bind:id="item.id" v-bind:href="'#' + item.id">
                       <span class="nav__icon" v-html="item.icon"></span>
+                      <span class="nav__text">{{item.text}}</span>
                     </a>
                 </li>
             </ul>

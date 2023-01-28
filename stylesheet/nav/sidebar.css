@@ -29,15 +29,48 @@
     background-color: var(--color-black); 
 }
 
-
 .nav.nav--slidebar .nav__item {
-    font-family: fontawesome;
-
+   position: relative; 
 }
 
 .nav.nav--slidebar .nav__icon {
     font-size: 1.25rem;
+    font-family: fontawesome;
 }
+
+.nav.nav--slidebar .nav__text {
+    font-family: "Montserrat" !important;
+
+    top: 42%;
+    position: absolute;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-right: 11rem;
+    width: 5rem;
+    text-transform: capitalize;
+
+    transition: all 350ms ease;
+    opacity: 0;
+}
+
+.nav.nav--slidebar .nav__text:after { 
+    content: '';
+    position: absolute;
+    border-top: 5px solid transparent;
+    border-left: 10px solid var(--color-white);
+    border-bottom: 5px solid transparent;
+
+    right: -9px;
+    top: 26%;
+}
+
+.nav.nav--slidebar .nav__item:hover .nav__text {
+    opacity: 1;
+ }
 
 @media only screen and (max-width: 1024px) {
     .nav.nav--slidebar {

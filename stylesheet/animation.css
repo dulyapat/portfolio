@@ -1,0 +1,39 @@
+[data-animation] {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    transition-duration: 1.5s;
+}
+
+.animation  [data-animation^=fade] {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+[data-animation^=fade-up] {
+    transform: translate3d(0, 100px, 0);
+}
+
+[data-animation^=fade-left] {
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-animation^=fade-right] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-animation-delay="100"] {
+    transition-delay: .1s;
+}
+
+[data-animation-delay="200"] {
+    transition-delay: .2s;
+}
+
+[data-animation-delay="300"] {
+    transition-delay: .3s;
+}
+
+[data-animation-delay="400"] {
+    transition-delay: .4s;
+}

@@ -1,4 +1,6 @@
-
+.slick.slick--milestone {
+    margin: 4rem 0;
+}
 
 .slick.slick--milestone .slick__item.slick-slide {
     color:var(--color-white);

@@ -1,0 +1,105 @@
+
+
+.slick.slick--milestone .slick__item.slick-slide {
+    color:var(--color-white);
+}
+
+.slick.slick--milestone .slick-list {
+   overflow: unset;
+}
+
+.slick.slick--milestone .slick__item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* .slick.slick--milestone .slick__item.slick-current::after {
+    opacity: 1;
+}
+
+.slick.slick--milestone .slick__item.slick-current::before {
+    opacity: 1;
+}
+
+.slick.slick--milestone .slick__item::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+
+    opacity: 0;
+    transition: all 350ms ease;
+}
+
+.slick.slick--milestone .slick__item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-yellow);
+    left: 0;
+    bottom: -4.8rem;
+
+    opacity: 0;
+    transition: all 350ms ease;
+} */
+
+.slick.slick--milestone .slick__wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    margin-right: 1rem;
+}
+
+.slick.slick--milestone .slick__logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.slick.slick--milestone .slick__wrapper:after {
+    opacity: 0.5;
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    right: 0;
+    bottom: 0;
+}
+
+.slick.slick--milestone .slick__body {
+    margin-top: 0.25rem;
+}
+
+.slick.slick--milestone .slick__name {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.slick.slick--milestone .slick__header {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.slick.slick--milestone .slick__header:after {
+    content: '';
+    width: 3rem;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: var(--color-red);
+}

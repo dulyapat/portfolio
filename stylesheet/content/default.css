@@ -9,4 +9,41 @@
 
 .content.content--portfolio {
   overflow: hidden;
+  position: relative;
+}
+
+.content.content--aboutus::before {
+  content: '';
+  position: absolute;
+  width: 38vw;
+  height: 11vw;
+  inset: auto 0 0 auto;
+
+  background-image: -webkit-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+  background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+  background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
+  -webkit-background-size: 20px 20px;
+
+  opacity: 0.2;
+}
+
+.content.content--portfolio::after {
+  content: '';
+  position: absolute;
+  width: 38vw;
+  height: 11vw;
+  inset: auto auto 0 0;
+
+  background-image: -webkit-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+  background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
+  background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
+  -webkit-background-size: 20px 20px;
+
+  opacity: 0.2;
+}
+
+.content--milestone {
+  overflow: hidden;
+  min-height: unset;
+  padding-bottom: 5rem;
 }

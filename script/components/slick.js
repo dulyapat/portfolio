@@ -20,6 +20,23 @@ if(document.querySelector('.slick--portfolio')) {
         fade: false,
         infinite:true,
         loop:true,
+        dots: true,
+        customPaging : function(slider, i) {
+            return "<div class='slick__dots'></div>";
+           },
+        autoplay:false,
+        draggable:true,
+    });  
+}
+
+if(document.querySelector('.slick--milestone')) { 
+    $('.slick--milestone').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        infinite:false,
+        loop:false,
         dots: false,
         autoplay:false,
         draggable:true,

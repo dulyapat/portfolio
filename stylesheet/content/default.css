@@ -44,6 +44,5 @@
 
 .content--milestone {
   overflow: hidden;
-  min-height: unset;
   padding-bottom: 5rem;
 }

@@ -23,26 +23,39 @@ Vue.createApp({
         },
 
         scrollAnimation() {
-            let $scrollContainer = $(".scroll-container");
+            let $scrollContainer = $(".content.scroll-container");
 
             if ($scrollContainer.length) {
                 const controller = new ScrollMagic.Controller();
                 const scene = [];
                 
                 for (let i = 0; i < $scrollContainer.length; i++) {
-                $(".scroll-container:eq(" + i + ")").attr("id", "scrollMagic" + i);
-                scene[i] = new ScrollMagic.Scene({triggerElement: "#scrollMagic" + i , duration: "0", offset: 0, triggerHook: 0.75})
+                $(".content.scroll-container:eq(" + i + ")").attr("id", "scrollMagic" + i);
+                scene[i] = new ScrollMagic.Scene({
+                triggerElement: "#scrollMagic" + i , 
+                duration: $("#scrollMagic" + i).height(), 
+                triggerHook: 0.5})
                 .on("enter", function () {
-                $("#scrollMagic" + i).addClass('animation');
-                })
+                $(".content#scrollMagic" + i).addClass('animation');
+                let $this = this;
+                let currentId = $this.triggerElement().getAttribute('id');
+
+                const navAll = document.querySelectorAll('.nav--slidebar .nav__item');
+                const remove = navAll.forEach(t => t.classList.remove('active'));
+
+                // check nav link same id and add active
+                const checkDiv = document.querySelector(`.nav--slidebar .nav__item#${currentId}`);
+                checkDiv ? checkDiv.classList.add('active') : '' ;
+                
+            })
                 .on("leave", function () {
-                $("#scrollMagic" + i).removeClass('animation');
+                $(".content#scrollMagic" + i).removeClass('animation');
                 })
                 // .addIndicators({name: i})
                 .addTo(controller);
                 }
             }
-        }
+        },
     },
 
     mounted() {

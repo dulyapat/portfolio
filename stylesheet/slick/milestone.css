@@ -84,6 +84,7 @@
 
 .slick.slick--milestone .slick__body {
     margin-top: 0.25rem;
+    padding: 0 1rem 0 0;
 }
 
 .slick.slick--milestone .slick__name {
@@ -105,3 +106,19 @@
     bottom: -0.5rem;
     background-color: var(--color-red);
 }
+
+@media only screen and (max-width: 768px) {
+    .slick.slick--milestone .slick__item {
+        flex-direction: column;
+    }   
+
+    .slick.slick--milestone .slick__wrapper {     
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .slick.slick--milestone {
+        margin: 0rem 0 2rem;
+    }
+  }

@@ -5,10 +5,10 @@ Vue.createApp({
             <ul>
                 <li v-for="item in items" 
                 :key="item">
-                    <a class="nav__item" v-bind:id="item.id" v-bind:href="'#' + item.id">
+                    <div class="nav__item" :class="{ 'active': index === 0 }" v-bind:id="'scrollMagic' + item.id" @click="navActive($event)">
                       <span class="nav__icon" v-html="item.icon"></span>
                       <span class="nav__text">{{item.text}}</span>
-                    </a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -17,31 +17,45 @@ Vue.createApp({
     data: () => ({
         items : [
           {
-            id:'home',
+            id:'0',
             text: 'Home',
             icon:'<i class="fas fa-home"></i>',
             href: 'javascript();',
           },
           {
-            id:'aboutus',
+            id:'1',
             text: 'About',
             icon:'<i class="far fa-user-circle"></i>',
             href: 'javascript();',
           },
           {
-            id:'portfolio',
+            id:'2',
             text: 'Portfolio',
             icon:'<i class="fal fa-suitcase"></i>',
             href: 'javascript();',
           },
           {
-            id:'call',
-            text:'call',
-            icon:'<i class="fas fa-mobile-alt"></i>',
+            id:'3',
+            text:'Milestone',
+            icon:'<i class="fal fa-building"></i>',
             href:'javascript();',
           }
         ],
       }),
+
+    methods: { 
+      navActive(event) {
+        event.preventDefault();
+        targetId = '#' + event.currentTarget.id;
+        console.log(targetId);
+        document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+        console.log('work');
+      }
+    },
+
+    mounted() {
+      // this.navActive();
+  }
 
 }).mount('#nav-vue')
 

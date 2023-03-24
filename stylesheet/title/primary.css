@@ -18,6 +18,7 @@
 }
 
 .title__name {
+    text-align: center;
     margin-top: -6rem;
     font-size: 3.5rem;
     color: var(--color-yellow);
@@ -28,3 +29,18 @@
     font-weight: 800;
     letter-spacing: 10;
 }
+
+@media only screen and (max-width: 375px) {
+    .title__bg {
+        font-size: 4rem;
+    }
+
+    .title__name {
+        margin-top: -3rem;
+        font-size: 3rem;
+    }
+
+    .title--primary { 
+        margin-bottom: 3rem;
+    }
+  }

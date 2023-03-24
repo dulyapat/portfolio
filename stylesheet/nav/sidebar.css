@@ -30,7 +30,21 @@
 }
 
 .nav.nav--slidebar .nav__item {
-   position: relative; 
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    background-color: var(--color-black);
+    transition: all 250ms ease;
+}
+
+
+.nav.nav--slidebar .nav__item.active {
+    background-color: var(--color-black-4);
+    transition: all 250ms ease;
+    color:var(--color-white);
 }
 
 .nav.nav--slidebar .nav__icon {
@@ -93,6 +107,10 @@
     .nav.nav--slidebar ul li {
         width: 25%;
         height: 100%;
+    }
+
+    .nav.nav--slidebar .nav__text { 
+        display: none;
     }
 }
 

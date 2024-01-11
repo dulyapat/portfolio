@@ -85,6 +85,12 @@
     }   
 }
 
+@media only screen and (max-width: 475px) {
+    .slick--portfolio .slick__item {
+         height: 15rem;
+    }   
+}
+
 @media only screen and (max-width: 375px) {
     .slick--portfolio .slick__item {
         height: 14rem;      

@@ -24,7 +24,7 @@
   background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
   background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
   -webkit-background-size: 20px 20px;
-
+  pointer-events: none;
   opacity: 0.2;
 }
 
@@ -39,6 +39,7 @@
   background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
   background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
   -webkit-background-size: 20px 20px;
+  pointer-events: none;
 
   opacity: 0.2;
 }
@@ -54,7 +55,7 @@
   background-image: -o-radial-gradient(1px 1px,circle,#c3bfca 1px,transparent 0);
   background-image: radial-gradient(circle at 1px 1px,#c3bfca 1px,transparent 0);
   -webkit-background-size: 20px 20px;
-
+  pointer-events: none;
   opacity: 0.2;
 }
 

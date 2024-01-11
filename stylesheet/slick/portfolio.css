@@ -81,11 +81,12 @@
 @media only screen and (max-width: 768px) {
     .slick--portfolio .slick__item {
         height: 25rem;
+         margin:0px 0.5rem;
     }   
 }
 
 @media only screen and (max-width: 375px) {
     .slick--portfolio .slick__item {
-        height: 14rem;
+        height: 14rem;      
     }   
 }

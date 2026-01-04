@@ -62,7 +62,7 @@ if(document.querySelector('.slick--milestone')) {
         infinite:false,
         loop:false,
         dots: false,
-        autoplay:false,
+        autoplay:true,
         draggable:true,
 
         responsive: [
